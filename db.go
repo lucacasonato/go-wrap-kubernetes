@@ -15,14 +15,14 @@ func init() {
 	// create an index
 }
 
-func allBooks() []Book {
+func allBooks() ([]Book, error) {
 	// get all books
 
-	return []Book{}
+	return []Book{}, nil
 }
 
-func authorBooks(author string) []Book {
+func authorBooks(author string) ([]Book, error) {
 	// get all books for a specific author
 
-	return []Book{}
+	return []Book{}, nil
 }
