@@ -19,7 +19,7 @@ var books *wrap.Collection
 
 func init() {
 	// initalize database
-	client, err := wrap.Connect("mongodb://mongo:27017", 5*time.Second) // create a new client with a 5 second timeout
+	client, err := wrap.Connect("mongodb://mongo-0.mongo,mongo-1.mongo:27017", 5*time.Second) // create a new client with a 5 second timeout
 	if err != nil {
 		panic(err)
 	}
